@@ -2,15 +2,16 @@ class Player {
     constructor(x,y,radius) {
       var options = {
           isStatic: false,
+          restitution: 1.0,
+          friction: 0.5,
+          density: 1.0
 
       }
       this.body = Bodies.circle(x,y,25,options);
       this.radius = radius;
       World.add(world, this.body);
     }
-    fly(){
-        Matter.Body.applyForce(this.body,this.body.position,{x:85,y:-100})
-      }
+
     display(){
 
 
