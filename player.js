@@ -2,7 +2,7 @@ class Player {
     constructor(x,y,radius) {
       var options = {
           isStatic: false,
-          restitution: 1.0,
+          restitution: 0.0,
           friction: 0.5,
           density: 1.0
 
